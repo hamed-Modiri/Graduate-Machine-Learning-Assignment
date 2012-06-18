@@ -1,0 +1,17 @@
+README
+
+% Jun Xie
+% 931-856-087
+% xie@eecs.oregonstate.edu
+
+The README file is used to illustrate how to use the source code for the programming assignment 3 of machine learning course. This project is done by myself. I also wrtie the code and report independently.
+
+In order to execute the problem, just follow the steps below 
+
+1. Go to matlab environment
+2. load SPECT.mat
+3. ensemble_demo(train, test);
+
+This will train SPECT dataset using two ensemble algorithms, respectively Bagging and Adaboost.
+
+If you have any problem about the program and the report, please contact with me(xie@eecs.oregonstate.edu). Thanks very much.
