@@ -1,0 +1,36 @@
+% Jun Xie
+% Implementation for the batch perceptron and voted perceptron demo
+
+% Parameters: dataset, in this case, there are two datasets, respectively twogaussian and irirs
+function miserror = perceptron_demo(dataset)
+
+% init weigth vector
+w=[.5 .5]';
+
+% input datasets: features and labels
+[training_number, training_column] = size(dataset);
+training_labels = dataset(:, 1);
+training_features = dataset(:, 2:training_column);
+
+% call perceptron
+[weight_batch, miserror]=batchperceptron(training_features, training_labels,w);
+[W, C]=votedperceptron(training_features, training_labels,w);
+% predict
+y_batch=training_features * weight_batch;
+weight_batch
+y_voted = sum(C * sign(W' * training_features.')); 
+
+figure;
+gscatter(twogaussian(:,2), twogaussian(:,3), twogaussian(:,1),'rgb','osd');
+
+% plot prediction over origianl data
+%{
+figure;hold on
+plot(X1(1,:),X1(2,:),'b.')
+plot(X2(1,:),X2(2,:),'r.')
+
+plot(X(1,ytag<0),X(2,ytag<0),'bo')
+plot(X(1,ytag>0),X(2,ytag>0),'ro')
+%legend('class -1','class +1','pred -1','pred +1')
+%}
+end

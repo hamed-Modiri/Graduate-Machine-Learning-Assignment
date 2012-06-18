@@ -1,0 +1,29 @@
+% Jun Xie
+% xie@eecs.oregonstate.edu
+
+README
+
+The README file is used to illustrate how to use the source code for the programming assignment 1 of machine learning course. This project is done by myself. I wrtie the code and report. 
+
+In order to use the source code to get the desired result, you should follow the following step.
+
+	(1) First step and the most important step
+
+	>> load assignment1.mat
+	The command is used to load the four datasets in this experimentation
+
+	(2) Linear Regerssion 
+	
+	>> [theta_vec_batch, theta_batch, sseerr_batch, theta_vec_stochastic, theta_stochastic, sseerr_stochastic, sseconvergence_batch, sseconvergence_stochastic] = regression( regression_training, regression_testing);
+	The command is used to create all datas for the experimentation
+
+	(3) Perceptron
+
+	>> twogaussianmiserror = batchperceptronfortwogaussian(twogaussian);
+	The command is used to get the misclassification error and plot the final decision boundary
+
+	>> irismiserror = votedperceptronforiris(iris);
+	The command is used to get the misclassification error and plot the final decision boundary
+
+	>> irismiserrormodified = votedperceptronforirismodified(iris);
+	The command is used to get the w_avg  and plot the final decision boundary		   
