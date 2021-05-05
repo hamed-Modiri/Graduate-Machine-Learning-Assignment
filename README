@@ -1,8 +1,1 @@
-README
 
-This repository serves a container for my CS534 Machine Learning Programming Assignment Source Code. There are four programming assignments required in this course, including gradient descent algorithm, Perceptron, Naive Bayes algorithm as well as Batch and Boosting. I code gradient descent, Perceptron, Batch and Boosting using Matlab, code Naive Bayes algorithm using Java.
-
-The most important thing is that each folder has its own README file. So you can follow the guidelines of README to execute the program. It is very exciting to do research and coding in Machine Learning. Enjoy it.
-
-Jun Xie
-xie@eecs.oregonstate.edu
